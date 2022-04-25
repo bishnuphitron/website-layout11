@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    .container {
+      border: 2px dotted sandybrown;
+      margin-bottom: 20px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      /* justify-content: flex-end; */
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      align-items: stretch;
+    }
+    .box {
+      width: 200px;
+      /* height: 200px; */
+      border: 3px dashed rebeccapurple;
+      font-size: 3em;
+    }
+
+    .container2 {
+      border: 2px dotted sandybrown;
+      height: 500px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    #box-1 {
+      order: 2;
+    }
+    #box-2 {
+      flex-grow: 1;
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>flexbox, flex direction justify content align items</h1>
+
+  <div class="container">
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+  </div>
+
+  <div class="container2">
+    <div id="box-1" class="box">Box-1</div>
+    <div id="box-2" class="box">Box-2</div>
+  </div>
+</body>
+</html>
